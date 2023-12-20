@@ -1,0 +1,1 @@
+# `@repo/global-vars`
