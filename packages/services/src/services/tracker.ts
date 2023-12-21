@@ -24,12 +24,10 @@ import {
 } from '@repo/shared-types'
 import { auth, db, firebaseFunctions } from './firestore'
 import { v4 as uuidv4 } from 'uuid'
-import { parseExercise } from '@repo/util'
-import { getTitleAndDate } from '../util/getTitleAndDate'
+import { parseExercise, getTitleAndDate, calculateMaxWeight } from '@repo/util'
 import { updateUserActivity } from './auth'
 import toast from 'react-hot-toast'
 import { httpsCallable } from 'firebase/functions'
-import { calculateMaxWeight } from '../util/calculateMaxWeight'
 
 export const addWorkout = async (
   name: string,

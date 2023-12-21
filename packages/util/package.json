@@ -2,8 +2,19 @@
   "name": "@repo/util",
   "version": "0.0.0",
   "private": true,
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "exports": {
+    ".": "./src/index.ts",
+    "./calculateInputWidth": "./src/util/calculateInputWidth.tsx",
+    "./calculateMaxWeights": "./src/util/calculateMaxWeights.tsx",
+    "./chartUtil": "./src/util/chartUtil.tsx",
+    "./dateUtil": "./src/util/dateUtil.tsx",
+    "./getDataFromExercise": "./src/util/getDataFromExercise.tsx",
+    "./getTitleAndDate": "./src/util/getTitleAndDate.tsx",
+    "./parseExercise": "./src/util/parseExercise.tsx",
+    "./parseExerciseData": "./src/util/parseExerciseData.tsx",
+    "./stringArrToSelectArr": "./src/util/stringArrToSelectArr.tsx",
+    "./stringModifiers": "./src/util/stringModifier.tsx"
+  },
   "dependencies": {
     "typescript": "latest"
   },

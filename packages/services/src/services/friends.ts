@@ -11,7 +11,13 @@ import {
   startAfter,
 } from 'firebase/firestore'
 import { getUIDFromUsername, getUsername } from './auth'
+
 import { auth, db, firebaseFunctions } from './firestore'
+import {
+  FRIENDS,
+  INCOMING_FRIEND_REQUESTS,
+  OUTGOING_FRIEND_REQUESTS,
+} from '@repo/global-vars'
 import {
   CombinedFriendsData,
   FriendsData,
@@ -19,11 +25,6 @@ import {
 } from '@repo/shared-types'
 import { toast } from 'react-hot-toast'
 import { httpsCallable } from 'firebase/functions'
-import {
-  FRIENDS,
-  INCOMING_FRIEND_REQUESTS,
-  OUTGOING_FRIEND_REQUESTS,
-} from '@repo/global-vars/userProfileCollections'
 
 export const getFriendshipStatus = async (friendUsername: string) => {
   const currUID = auth?.currentUser?.uid

@@ -3,12 +3,12 @@
   "version": "0.0.0",
   "private": true,
   "dependencies": {
-    "typescript": "latest"
+    "typescript": "latest",
+    "@repo/global-vars": "*"
   },
   "devDependencies": {
     "@repo/typescript-config": "*",
-    "@repo/shared-types": "*",
-    "@repo/global-vars": "*"
+    "@repo/shared-types": "*"
   },
   "scripts": {
     "dev": "echo 'Add dev script here'",

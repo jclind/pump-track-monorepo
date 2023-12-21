@@ -2,16 +2,19 @@
   "name": "@repo/global-vars",
   "version": "0.0.0",
   "private": true,
-  "main": "src/index.ts",
   "exports": {
-    "./userProfileCollections": "./src/util/userProfileCollections.tsx"
+    ".": "./src/index.ts"
+  },
+  "dependencies": {
+    "typescript": "^5.3.3"
+  },
+  "devDependencies": {
+    "@repo/typescript-config": "*"
   },
   "scripts": {
     "dev": "echo 'Add dev script here'",
     "build": "echo 'Add build script here'",
     "test": "echo 'Add test script here'",
     "lint": "echo 'Add lint script here'"
-  },
-  "dependencies": {},
-  "devDependencies": {}
+  }
 }
